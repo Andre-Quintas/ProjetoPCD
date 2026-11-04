@@ -25,8 +25,8 @@ public abstract class ComponentState extends JPanel {
 
     protected final Color corEstado() {
         return ativo
-            ? new Color(30, 160, 75)
-            : new Color(165, 170, 175);
+            ? new Color(30, 160, 75) //verde
+            : new Color(165, 170, 175); //cinza
     }
 
     @Override
