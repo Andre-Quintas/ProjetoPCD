@@ -5,8 +5,8 @@ import iscot.enums.Type;
 
 public class RegistrationEvent extends Event {
 
-	public RegistrationEvent(String eventId, Areas area, Type type, String timestamp) {
-		super(eventId, area, type, timestamp);
+	public RegistrationEvent(String eventId, Areas area, Type type) {
+		super(eventId, area, type);
 		// TODO Auto-generated constructor stub
 	}
 	
