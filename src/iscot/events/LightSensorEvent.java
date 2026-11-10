@@ -8,7 +8,6 @@ public class LightSensorEvent extends SensorEvent {
 	
 	public LightSensorEvent(String eventId, Areas area, double light) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.light = light;
 	}
 	
@@ -18,7 +17,7 @@ public class LightSensorEvent extends SensorEvent {
 	
 	@Override
     public String toString() {
-        return "LightSensorEvent [area=" + getArea() + ", light=" + light + "%]";
+        return "LightSensorEvent [eventId=" + getEventId() + ", area=" + getArea() + ", light=" + light + "%]";
     }
 
 }

@@ -8,7 +8,6 @@ public class AreaLightingOrderEvent extends HighLevelOrderEvent {
 
 	public AreaLightingOrderEvent(String eventId, Areas area, boolean turnOn) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.turnOn = turnOn;
 	}
 	

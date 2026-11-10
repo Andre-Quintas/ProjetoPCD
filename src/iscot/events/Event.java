@@ -10,7 +10,6 @@ public abstract class Event {
 	private final Type type;
 	
 	public Event(String eventId, Areas area, Type type) {
-		// TODO Auto-generated constructor stub
 		this.eventId = eventId;
 		this.area = area;
 		this.type = type;
@@ -34,6 +33,6 @@ public abstract class Event {
 	
 	@Override
     public String toString() {
-        return "Event [deviceId=" + eventId + ", area=" + area + ", type=" + type + ", timestamp=" + timestamp + "]";
+        return "Event [eventId=" + eventId + ", area=" + area + ", type=" + type + ", timestamp=" + timestamp + "]";
     }
 }

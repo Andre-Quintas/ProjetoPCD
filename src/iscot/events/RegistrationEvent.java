@@ -7,7 +7,6 @@ public class RegistrationEvent extends Event {
 
 	public RegistrationEvent(String eventId, Areas area, Type type) {
 		super(eventId, area, type);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override

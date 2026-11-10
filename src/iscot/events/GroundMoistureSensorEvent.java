@@ -8,7 +8,6 @@ public class GroundMoistureSensorEvent extends SensorEvent {
 
 	public GroundMoistureSensorEvent(String eventId, Areas area, double groundMoisture) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.groundMoisture = groundMoisture;
 	}
 	
@@ -18,7 +17,7 @@ public class GroundMoistureSensorEvent extends SensorEvent {
 	
 	@Override
     public String toString() {
-        return "GroundMoistureSensorEvent [area=" + getArea() + ", groundMoisture=" + groundMoisture + "%]";
+        return "GroundMoistureSensorEvent [eventId=" + getEventId() + ", area=" + getArea() + ", groundMoisture=" + groundMoisture + "%]";
     }
 
 }

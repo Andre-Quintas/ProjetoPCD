@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -16,6 +17,7 @@ import iscot.client.gui.LightIcon;
 import iscot.client.gui.VentilatorIcon;
 import iscot.enums.Areas;
 import iscot.enums.Type;
+import iscot.events.AreaVentilationOrderEvent;
 
 public class Ventilator {
 
@@ -48,7 +50,19 @@ public class Ventilator {
 			JPanel painel=new JPanel();
 			painel.setLayout(new BorderLayout());
 			VentilatorIcon ventilator = new VentilatorIcon();
+
+			JButton btnToggle = new JButton("Ligar / Desligar");
+
+			btnToggle.addActionListener(e -> {
+				boolean isVentilatorON = ventilator.isLigado();
+
+				AreaVentilationOrderEvent event = new AreaVentilationOrderEvent(null, area, !isVentilatorON);
+				System.out.println(event);
+            });
+
 			painel.add(ventilator,BorderLayout.CENTER);
+			painel.add(btnToggle, BorderLayout.SOUTH);
+
 			janela.setContentPane(painel);
 			janela.setLocation(600, 400);
 			janela.setMinimumSize(janela.getSize());
@@ -61,6 +75,7 @@ public class Ventilator {
 			// TODO: receive and handle messages from server
 			
 			// TODO: for first phase: create an appropriate event hardcoded locally and change the GUI accordingly
+
 		}
 	}
 }

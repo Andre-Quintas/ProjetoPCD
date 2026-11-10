@@ -8,7 +8,6 @@ public class TemperatureSensorEvent extends SensorEvent {
 	
 	public TemperatureSensorEvent(String eventId, Areas area, double temperature) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.temperature = temperature;
 	}
 
@@ -18,7 +17,7 @@ public class TemperatureSensorEvent extends SensorEvent {
 	
 	@Override
     public String toString() {
-        return "TemperatureSensorEvent [area=" + getArea() + ", temperature=" + temperature + "Cº]";
+        return "TemperatureSensorEvent [eventId=" + getEventId() + ", area=" + getArea() + ", temperature=" + temperature + "Cº]";
     }
 	
 }

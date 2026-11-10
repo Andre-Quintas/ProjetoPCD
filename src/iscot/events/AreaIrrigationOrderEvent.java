@@ -8,7 +8,6 @@ public class AreaIrrigationOrderEvent extends HighLevelOrderEvent {
 	
 	public AreaIrrigationOrderEvent(String eventId, Areas area, boolean turnOn) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.turnOn = turnOn;
 	}
 	

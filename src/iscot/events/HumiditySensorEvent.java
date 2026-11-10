@@ -8,7 +8,6 @@ public class HumiditySensorEvent extends SensorEvent {
 	
 	public HumiditySensorEvent(String eventId, Areas area, double humidity) {
 		super(eventId, area);
-		// TODO Auto-generated constructor stub
 		this.humidity = humidity;
 	}
 
@@ -19,6 +18,6 @@ public class HumiditySensorEvent extends SensorEvent {
 	
 	@Override
     public String toString() {
-        return "HumiditySensorEvent [area=" + getArea() + ", humidity=" + humidity + "%]";
+        return "HumiditySensorEvent [eventId=" + getEventId() + ", area=" + getArea() + ", humidity=" + humidity + "%]";
     }
 }
